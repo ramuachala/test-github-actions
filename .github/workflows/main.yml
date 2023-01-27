@@ -38,6 +38,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: akasabuild
+          path: akasabuild
           retention-days: 1
 
       - name: Download Artifact
