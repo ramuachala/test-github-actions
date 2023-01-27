@@ -35,7 +35,8 @@ jobs:
       - name: Build
         run: yarn build
         env:
-          REACT_APP_MAIN_URL: ${{ secrets.REACT_APP_MAIN_URL }}
+          REACT_APP_MAIN_URL: ${{ secrets.staging.REACT_APP_MAIN_URL }}
+
       - name: "Upload Artifact"
         uses: actions/upload-artifact@v3
         with:
