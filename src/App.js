@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+const API_PATH = process.env.REACT_APP_MAIN_URL;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header>GitHub Actions</header>
+      <main>
+        <h1>GitHub Actions {API_PATH}</h1>
+      </main>
+      <footer>smaple footer</footer>
     </div>
   );
 }

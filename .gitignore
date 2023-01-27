@@ -10,6 +10,7 @@
 
 # production
 /build
+/akasabuild
 
 # misc
 .DS_Store
